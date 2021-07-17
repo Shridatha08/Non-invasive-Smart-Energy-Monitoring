@@ -28,9 +28,33 @@ model.
 * LSTM architecture implementation
 * Hyper parameter tuning to improvise the LSTM.
 * Saving the model's weight as a **H5** file.
-* Flask Web-API for deep learning model deployment to provide interactive chart based forecast for the end-user. 
- 
-![]()
+* Flask Web-API for deep learning model deployment to provide interactive chart based forecast for the end-user.\
+   *The server can run on local server or any cloud services capable of running DL models.*\
+
+
+
+<h2><p style="text-align:center;">Results</p></h2>
+
+**Interactive graphical interface based Homepage**
+![](https://i.stack.imgur.com/a0uNB.png)
+
+**Dashboard made with creative jschart to display real-time consumption**
+![](https://i.stack.imgur.com/qY5Wh.png)
+
+**GET request form for taking number of days to be used as input for the LSTM model**
+![](https://i.stack.imgur.com/bBcad.png)
+
+**Plot of forecast model with train, validation and predicted data values rendered from LSTM model through 
+Flask API, along with forecast for the next timestamp (next day) and model accuracy**
+<p align="center">
+  <img width="1057" height="675" src="https://i.stack.imgur.com/XveTt.png">
+</p>
+
+
+>For more details check in Documentation!
+
+
+
 
 
 
