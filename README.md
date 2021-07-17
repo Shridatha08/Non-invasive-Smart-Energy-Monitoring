@@ -18,6 +18,11 @@ model.
 * Creating table in MySQL to store incoming values with timestamp.
 * Php Script to send data from database to webpage.
 * Javascript and HTML5 based webpage for real-time consumption Visualization.
+
+<p align="center">
+  <img width="443" height="402" src="https://i.stack.imgur.com/S4nyV.png">
+</p>
+
 * Retrieving the collected data from MySQL table in the CSV format for forecasting.\
   *Since the data acquired was quite less for model. Electrcity Consumption dataset from kaggle was used.*\
   <https://www.kaggle.com/uciml/electric-power-consumption-data-set>
@@ -32,6 +37,8 @@ model.
    *The server can run on local server or any cloud services capable of running DL models.*\
 
 
+<!-- ![](https://i.stack.imgur.com/S4nyV.png)
+![](https://i.stack.imgur.com/dw5Dr.png) -->
 
 <h2><p style="text-align:center;">Results</p></h2>
 
