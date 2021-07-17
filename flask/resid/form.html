@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<title>Prediction </title>
+<h1 style="text-align:center;color: #dd2e2e;margin: 30px;">Energy Consumption Prediction on Daily basis</h1>
+<h2 style="text-align:start;"color: #2e6c80;">Please enter the following information:</h2>
+<ul style="list-style-type: square;">
+<!-- <li>Ahead is the number of days you want predict ahead of time. Less the number in "Ahead", higher the accuracy beacasue machine will have hard time predicting further into the future.</li> -->
+<li>Days is the number of days you want to use as the prediction dataset to predict the future. For example, you can use 30 days of data to predict the 31st day (ahead =1)</li>
+<!-- <li>Epochs is the number of passes entire training dataset, the algorithm has completed. For example, you can use epoch as 100</li> -->
+</ul>
+<p>&nbsp;</p>
+<form action="/data" method = "POST" style="text-align:center; margin: 20px;">
+    <!-- <p>Epochs<input type = "number" name = "Epochs" /></p> -->
+    <p><input type = "number" name = "Days" placeholder="Days" /></p>
+    <p><input type = "submit" class="btn btn-primary btn-large" value = "Predict" /></p>
+</form>
+
+</body>
+</html>
