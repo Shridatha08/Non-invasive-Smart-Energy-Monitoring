@@ -34,7 +34,7 @@ model.
 * Hyper parameter tuning to improvise the LSTM.
 * Saving the model's weight as a **H5** file.
 * Flask Web-API for deep learning model deployment to provide interactive chart based forecast for the end-user.\
-   *The server can run on local server or any cloud services capable of running DL models.*\
+   *The server can run on local server or any cloud services capable of running DL models.*
 
 
 <!-- ![](https://i.stack.imgur.com/S4nyV.png)
