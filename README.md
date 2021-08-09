@@ -13,7 +13,7 @@ model.
 
 * Interfacing CT-013 Current sensor with ESP32, connected to a Access Point.
 * Reading I<sub>rms</sub> values from sensor and calculating Power consumed in KWh.
-* Pushing data to the AWS EC2 instance every 10 minutes and MCU goes to sleep mode.
+* Pushing data to the AWS EC2 instance every 10 minutes.
 * Setting up Apache, MySQL and phpmyadmin in EC2 instance for data acquisition.
 * Creating table in MySQL to store incoming values with timestamp.
 * Php Script to send data from database to webpage.
