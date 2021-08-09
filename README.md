@@ -9,7 +9,7 @@ utilised by the server to run LSTM Neural Networks to predict the possible futur
 predicted future value is compared with the actual consumption to test the accuracy of the
 model.
 
-<h2><p style="text-align:center;">Algorithm</p></h2>
+<h2><p style="text-align:center;">Project Flow</p></h2>
 
 * Interfacing CT-013 Current sensor with ESP32, connected to a Access Point.
 * Reading I<sub>rms</sub> values from sensor and calculating Power consumed in KWh.
