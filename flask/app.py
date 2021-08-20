@@ -21,7 +21,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 from keras.callbacks import EarlyStopping
 from keras.models import load_model
-#from keras.models import load_weights
+
 
 app = Flask(__name__)
 
@@ -43,14 +43,10 @@ time series data."""
 
 
 @app.route('/data', methods=['POST'])
-def hello():
+def get():
 
-    """Get the input names from form.html"""
-
-    # ahead = request.form['Ahead']
+    """Get the input from form.html"""
     d = request.form['Days']
-
-    # ahead = int(ahead)
     d = int(d)
 
 
@@ -108,7 +104,6 @@ def hello():
     valid['Predictions']=predictions
 
     plt.figure(figsize=(12,8))
-    #plt.title("Daily Consumption Model")
     plt.xlabel('Timestamp',fontsize=18)
     plt.ylabel('Consumption(KWh)',fontsize=18)
     plt.plot(train['Consumption (Kwh)'])
