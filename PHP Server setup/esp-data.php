@@ -2,11 +2,10 @@
 
 $servername = "localhost";
 
-// REPLACE with your Database name
 $dbname = "esp_data";
-// REPLACE with Database user
+
 $username = "root";
-// REPLACE with Database user password
+
 $password = "minor";
 
 // Create connection
@@ -26,23 +25,9 @@ while ($data = $result->fetch_assoc()){
 
 $readings_time = array_column($sensor_data, 'reading_time');
 
-// ******* Uncomment to convert readings time array to your timezone ********
-/*$i = 0;
-foreach ($readings_time as $reading){
-    // Uncomment to set timezone to - 1 hour (you can change 1 to any number)
-    $readings_time[$i] = date("Y-m-d H:i:s", strtotime("$reading + 5 hours"));
-    // Uncomment to set timezone to + 4 hours (you can change 4 to any number)
-    //$readings_time[$i] = date("Y-m-d H:i:s", strtotime("$reading + 4 hours"));
-    $i += 1;
-}*/
-
 $value1 = json_encode(array_reverse(array_column($sensor_data, 'value1')), JSON_NUMERIC_CHECK);
 $reading_time = json_encode(array_reverse($readings_time), JSON_NUMERIC_CHECK);
 
-/*echo $value1;
-echo $value2;
-echo $value3;
-echo $reading_time;*/
 
 $result->free();
 $conn->close();
