@@ -18,7 +18,7 @@ model.
 
 * Interfacing CT-013 Current sensor with ESP32, connected to a Access Point.
 * Reading I<sub>rms</sub> values from sensor and calculating Power consumed in KWh.
-* Pushing data to the AWS EC2 instance every 10 minutes.
+* Pushing data to the AWS EC2 instance every 30 seconds.
 * Setting up Apache, MySQL and phpmyadmin in EC2 instance for data acquisition.
 * Creating table in MySQL to store incoming values with timestamp.
 * Php Script to send data from database to webpage.
@@ -28,7 +28,7 @@ model.
   <https://www.kaggle.com/uciml/electric-power-consumption-data-set> -->
 * Exploratory Data Analysis and pre-processing to prepare dataset for input to the forecasting model.\
       i. From the dataset Total consumption is computed and the values were converted from Wh to KWh.\
-      ii. The original dataset's frequency of *10min* was converted to *daily* frequency to reduce the irregularity.
+      ii. The original dataset's frequency of *30 sec* was converted to *daily* frequency to reduce the irregularity.
 * Dividing the dataset into test (20%) and train (80%). 
 * LSTM architecture implementation
 * Hyper parameter tuning to improvise the LSTM.
