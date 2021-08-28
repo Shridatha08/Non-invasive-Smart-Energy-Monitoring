@@ -13,7 +13,7 @@ $api_key = $value2 = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
     if($api_key == $api_key_value) {
-        $value2 = test_input($_POST["value2"]);
+        $value2 = test_input($_POST["value1"]);
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -22,8 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Connection failed: " . $conn->connect_error);
         } 
         
-        $sql = "INSERT INTO SensorData2 (value2)
-        VALUES ('" . $value2 . "')";
+        $sql = "INSERT INTO SensorData (value1)
+        VALUES ('" . $value1 . "')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
