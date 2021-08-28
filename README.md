@@ -11,6 +11,11 @@ model.
 
 <h2><p style="text-align:center;">Project Flow</p></h2>
 
+<p align="center">
+  <img width="443" height="402" src="https://i.stack.imgur.com/S4nyV.png">
+</p>
+
+
 * Interfacing CT-013 Current sensor with ESP32, connected to a Access Point.
 * Reading I<sub>rms</sub> values from sensor and calculating Power consumed in KWh.
 * Pushing data to the AWS EC2 instance every 10 minutes.
@@ -18,11 +23,6 @@ model.
 * Creating table in MySQL to store incoming values with timestamp.
 * Php Script to send data from database to webpage.
 * Javascript and HTML5 based webpage for real-time consumption Visualization.
-
-<p align="center">
-  <img width="443" height="402" src="https://i.stack.imgur.com/S4nyV.png">
-</p>
-
 * Retrieving the collected data from MySQL table in the CSV format for forecasting.\
 <!--   *Since the data acquired was quite less for model. Electrcity Consumption dataset from kaggle was used.*\
   <https://www.kaggle.com/uciml/electric-power-consumption-data-set> -->
