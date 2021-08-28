@@ -24,11 +24,11 @@ model.
 </p>
 
 * Retrieving the collected data from MySQL table in the CSV format for forecasting.\
-  *Since the data acquired was quite less for model. Electrcity Consumption dataset from kaggle was used.*\
-  <https://www.kaggle.com/uciml/electric-power-consumption-data-set>
+<!--   *Since the data acquired was quite less for model. Electrcity Consumption dataset from kaggle was used.*\
+  <https://www.kaggle.com/uciml/electric-power-consumption-data-set> -->
 * Exploratory Data Analysis and pre-processing to prepare dataset for input to the forecasting model.\
       i. From the dataset Total consumption is computed and the values were converted from Wh to KWh.\
-      ii. The original dataset's frequency of *15min* was converted to *daily* frequency to reduce the irregularity.
+      ii. The original dataset's frequency of *10min* was converted to *daily* frequency to reduce the irregularity.
 * Dividing the dataset into test (20%) and train (80%). 
 * LSTM architecture implementation
 * Hyper parameter tuning to improvise the LSTM.
