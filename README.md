@@ -1,4 +1,4 @@
-# Predictive-non-invasive-Energy-Management
+# Non Invasive Smart Energy Montoring
 
 Smart home devices and its applications have a great upside potential in successfully cutting
 down the electricity consumption across households. This study focuses on the realisation of
